@@ -32,7 +32,7 @@ function astro_send_order() {
 			'subject' => 'Новый заказ на сайте Astrojyotish.ru'
 		] )
 		->headers( [
-			"From: AstroJyotish.ru <no-reply@astrojyotish.ru>",
+			"From: AstroJyotish.ru <star@astrojyotish.ru>",
 			"Content-type: text/html; charset=utf-8"
 		] )
 		->send();
@@ -50,7 +50,7 @@ function astro_send_order() {
 				'subject' => 'Вы оформили заказ на сайте Astrojyotish.ru'
 			] )
 			->headers( [
-				"From: AstroJyotish.ru <no-reply@astrojyotish.ru>",
+				"From: AstroJyotish.ru <star@astrojyotish.ru>",
 				"Content-type: text/html; charset=utf-8"
 			] )
 			->send();
