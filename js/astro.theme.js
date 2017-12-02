@@ -30,21 +30,24 @@ $(document).ready(function () {
                 alert.removeClass('uk-alert-success');
                 alert.addClass('uk-alert-warning');
                 alert.find("p").html('Идет отправка...');
-            },
-            success: function () {
-                console.log('End send');
+            }
+        })
+            .done(function (data) {
+                console.log('End send', data);
                 alert.removeClass('uk-alert-warning');
                 alert.addClass('uk-alert-success');
                 alert.find("p").html('Заказ оформлен...');
                 alert.animate({
                     opacity: 0.05,
                     height: "toggle"
-                }, 5000, function () {
+                }, 3000, function () {
                     alert.attr("hidden");
                     $('.uk-modal-close-default').click();
                 });
-            }
-        });
+            })
+            .fail(function (err) {
+                console.log(err);
+            });
     })
 
 });
