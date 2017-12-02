@@ -55,8 +55,9 @@ function astro_send_order() {
 			] )
 			->send();
 	}
-	echo $email;
+	wp_reset_postdata();
+	echo var_dump( $email );
 
 	wp_die();
-	wp_reset_postdata();
+
 }
