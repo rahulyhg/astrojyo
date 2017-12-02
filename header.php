@@ -56,14 +56,14 @@
 		if ( function_exists( 'the_custom_logo' ) ): ?>
             <a href="<?php echo get_site_url(); ?>" title="<?php get_bloginfo( 'name' ); ?>">
                 <div class="astro-logo">
-                    <h1 class="astro-logo-header"><?php echo bloginfo( 'name' ); ?></h1>
+                    <h3 class="astro-logo-header"><?php echo bloginfo( 'name' ); ?></h3>
 					<?php the_custom_logo(); ?>
                 </div>
             </a>
 		<?php else: ?>
             <a href="<?php echo get_site_url(); ?>" title="<?php get_bloginfo( 'name' ); ?>">
                 <div class="astro-logo">
-                    <h1 class="astro-logo-header"><?php echo bloginfo( 'name' ); ?></h1>
+                    <h3 class="astro-logo-header"><?php echo bloginfo( 'name' ); ?></h3>
                 </div>
             </a>
 		<?php endif; ?>

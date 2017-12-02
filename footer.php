@@ -1,6 +1,6 @@
 </div>
-</div>
 </main>
+</div>
 <footer class="uk-margin-medium-bottom uk-card astro-tile astro-tile-shadow"
         style="background-image: url('<?php echo get_template_directory_uri() . '/img/back/px1.jpg'; ?>');">
     <div class="uk-grid uk-grid-small" uk-grid>
@@ -31,6 +31,7 @@
     </div>
 </footer>
 </div>
+
 <?php wp_footer(); ?>
 </body>
 </html>
