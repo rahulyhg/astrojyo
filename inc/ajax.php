@@ -18,7 +18,7 @@ function astro_send_order() {
 	parse_str( $_POST['order'], $order );
 	$post = get_post( $_POST['product'] );
 	setup_postdata( $post );
-	
+
 	$email = ( new WP_Mail() )
 		->to( esc_attr( get_option( 'admin_email' ) ) )
 		->subject( 'Новый заказ на сайте Astrojyotish.ru' )
@@ -55,7 +55,7 @@ function astro_send_order() {
 			] )
 			->send();
 	}
-	echo( var_dump( $email ) );
+	echo var_dump( $email );
 
 	wp_die();
 	wp_reset_postdata();
