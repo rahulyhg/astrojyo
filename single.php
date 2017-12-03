@@ -22,7 +22,7 @@
                 </a>
             </section>
         </header>
-        <div>
+        <div uk-lightbox>
 			<?php echo the_content(); ?>
         </div>
     </article>

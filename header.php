@@ -12,7 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<?php wp_head(); ?>
         <meta name="theme-color" content="#550c05">
-        <meta name="yandex-verification" content="181e8f63cda50a04" />
+        <meta name="yandex-verification" content="181e8f63cda50a04"/>
     </head>
 <body <?php body_class(); ?>>
     <div class="uk-hidden@s" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -51,14 +51,14 @@
         </div>
     </div>
 <div class="uk-container">
-    <header class="astro-header uk-position-relative uk-margin-medium-top astro-tile-shadow uk-background-cover uk-background-bottom-center uk-visible@s"
+    <header class="astro-header uk-position-relative uk-margin-medium-top astro-tile-shadow uk-background-cover uk-background-bottom-center"
             style="background-image: url('<?php echo get_template_directory_uri() . '/img/back/space.jpg'; ?>')">
 		<?php
 		if ( function_exists( 'the_custom_logo' ) ): ?>
             <a href="<?php echo get_site_url(); ?>" title="<?php get_bloginfo( 'name' ); ?>">
                 <div class="astro-logo">
                     <h3 class="astro-logo-header"><?php echo bloginfo( 'name' ); ?></h3>
-					<?php the_custom_logo(); ?>
+                    <div class="uk-visible@s"><?php the_custom_logo(); ?></div>
                 </div>
             </a>
 		<?php else: ?>

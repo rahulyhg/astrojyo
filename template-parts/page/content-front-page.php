@@ -22,6 +22,7 @@
             </a>
         </div>
         <div class="uk-card-footer uk-padding-remove-top">
+			<?php echo the_category( ', ', 'single' ); ?>
             <a href="<?php echo esc_url( get_permalink() ); ?>"
                class="uk-button astro-post-btnmore astro-color uk-align-right">Подробнее...</a>
         </div>
