@@ -32,7 +32,7 @@
 </footer>
 </div>
 <div class="uk-flex uk-flex-center">
-    <div class="uk-card uk-card-body">
+    <div class="uk-card">
         <!-- Yandex.Metrika informer -->
         <a href="https://metrika.yandex.ru/stat/?id=46872000&amp;from=informer"
            target="_blank" rel="nofollow"><img
