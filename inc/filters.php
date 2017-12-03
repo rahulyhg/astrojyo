@@ -41,8 +41,9 @@ add_filter( 'nav_menu_css_class', 'astro_class_to_nav_menu', 10, 3 );
 
 
 function filter_widget_nav_menu_args( $nav_menu_args, $nav_menu, $args, $instance ) {
-	$nav_menu_args['menu_class'] = 'uk-nav uk-nav-default';
-	$nav_menu_args['items_wrap'] = '<ul class="%2$s">%3$s</ul>';
+	$nav_menu_args['menu_class'] = 'uk-nav-primary uk-nav-parent-icon';
+	$nav_menu_args['menu_id'] = 'uk-nav-default uk-nav-parent-icon';
+	$nav_menu_args['items_wrap'] = '<ul class="%2$s" uk-nav="multiple: true">%3$s</ul>';
 	$nav_menu_args['walker']     = new Astro_Walker_Nav_Menu();
 
 	return $nav_menu_args;

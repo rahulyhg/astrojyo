@@ -86,7 +86,7 @@
 			'menu_id'         => '',
 			'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
 			'depth'           => 0,
-			'walker'          => new Top_Menu_Walker()
+			'walker'          => new Dropdown_Submenu_Walker()
 		);
 		wp_nav_menu( $args ); ?>
     </nav>

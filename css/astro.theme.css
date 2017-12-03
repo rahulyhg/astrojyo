@@ -14,6 +14,18 @@ body {
     background-repeat: repeat;
 }
 
+.uk-navbar-dropdown-nav > li > a {
+    color: #ffffff;
+}
+
+.uk-navbar-dropdown-nav > li.uk-active > a {
+    color: #ffedbd;
+}
+
+.uk-navbar-dropdown-nav > li > a:focus, .uk-navbar-dropdown-nav > li > a:hover {
+    color: #ffb48a;
+}
+
 .uk-link, a {
     color: #5b2627;
     text-decoration: none;
@@ -25,15 +37,15 @@ body {
     color: #b10e00;
 }
 
-.uk-nav-default > li > a {
+.uk-nav-default > li > a, .uk-nav-primary > li > a, .uk-nav-primary .uk-nav-sub a {
     color: #5b2627;
 }
 
-.uk-nav-default > li > a:focus, .uk-nav-default > li > a:hover {
+.uk-nav-default > li > a:focus, .uk-nav-default > li > a:hover, .uk-nav-primary > li > a:focus, .uk-nav-primary > li > a:hover, .uk-nav-primary .uk-nav-sub a:focus, .uk-nav-primary .uk-nav-sub a:hover {
     color: #b10e00;
 }
 
-.uk-nav-default > li.uk-active > a {
+.uk-nav-default > li.uk-active > a, .uk-nav-primary > li.uk-active > a {
     color: #b10e00;
 }
 
@@ -94,12 +106,12 @@ body {
 }
 
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
-    color: #5b2627 !important;
+    color: #5b2627;
     font-family: 'Kurale', serif;
 }
 
 .uk-offcanvas-bar {
-    background: #f2d3b2;
+    background: url('/wp-content/themes/astrojyo/img/back/px1.jpg');
     color: #5b2627;
 }
 
@@ -276,4 +288,8 @@ img.aligncenter {
 
 .uk-card-primary.uk-card-body .uk-nav-default > li > a, .uk-card-primary > :not([class*=uk-card-media]) .uk-nav-default > li > a, .uk-card-secondary.uk-card-body .uk-nav-default > li > a, .uk-card-secondary > :not([class*=uk-card-media]) .uk-nav-default > li > a, .uk-light .uk-nav-default > li > a, .uk-offcanvas-bar .uk-nav-default > li > a, .uk-overlay-primary .uk-nav-default > li > a, .uk-section-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-section-secondary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default > li > a, .uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default > li > a {
     color: #5b2627;
+}
+
+.uk-navbar-dropdown {
+    background-image: url(http://astro.local/wp-content/themes/astrojyo/img/back/px1.jpg);
 }

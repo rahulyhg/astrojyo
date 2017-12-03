@@ -56,9 +56,6 @@ class Astro_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$display_depth = ( $depth + 1 ); // because it counts the first submenu as 0
 		$classes       = array(
 			'uk-nav-sub',
-			( $display_depth % 2 ? 'menu-odd' : 'menu-even' ),
-			( $display_depth >= 2 ? 'sub-sub-menu' : '' ),
-			'menu-depth-' . $display_depth
 		);
 		$class_names   = implode( ' ', $classes );
 
@@ -85,7 +82,7 @@ class Astro_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
 
 		// build html
-		$output .= $indent . '<li id="nav-menu-item-' . $item->ID . '" class="' . $depth_class_names . ' ' . $class_names . '">';
+		$output .= $indent . '<li class="' . $class_names . '">';
 
 		// link attributes
 		$attributes = ! empty( $item->attr_title ) ? ' title="' . esc_attr( $item->attr_title ) . '"' : '';
