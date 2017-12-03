@@ -12,6 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<?php wp_head(); ?>
         <meta name="theme-color" content="#550c05">
+        <meta name="yandex-verification" content="181e8f63cda50a04" />
     </head>
 <body <?php body_class(); ?>>
     <div class="uk-hidden@s" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
