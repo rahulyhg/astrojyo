@@ -291,5 +291,5 @@ img.aligncenter {
 }
 
 .uk-navbar-dropdown {
-    background-image: url(http://astro.local/wp-content/themes/astrojyo/img/back/px1.jpg);
+    background-image: url('/wp-content/themes/astrojyo/img/back/px1.jpg');
 }

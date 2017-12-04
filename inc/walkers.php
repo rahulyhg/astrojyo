@@ -9,7 +9,7 @@
 class Dropdown_Submenu_Walker extends Walker_Nav_Menu {
 	function start_lvl( &$output, $depth = 1, $args = array() ) {
 		$indent = str_repeat( "\t", $depth );
-		$output .= "\n$indent<div class='uk-navbar-dropdown chess-dropdown'><ul class='uk-nav uk-navbar-dropdown-nav'>\n";
+		$output .= "\n$indent<div class='uk-navbar-dropdown'><ul class='uk-nav uk-navbar-dropdown-nav'>\n";
 	}
 
 	function end_lvl( &$output, $depth = 1, $args = array() ) {
