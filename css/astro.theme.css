@@ -1,6 +1,6 @@
 html {
     background: #f2d3b2;
-    font-family: 'Kurale', serif;
+    font-family: 'Kurale', serif !important;
     color: #5b2627;
 }
 

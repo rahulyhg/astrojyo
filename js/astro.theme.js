@@ -9,6 +9,8 @@ $(document).ready(function () {
 
         let productID = $(this).attr('data-productId');
 
+        let thisForm = $(this);
+
         let data = {
             action: 'send_order',
             product: productID,
@@ -34,13 +36,14 @@ $(document).ready(function () {
         })
             .done(function (data) {
                 console.log('End send', data);
+                thisForm[0].reset();
                 alert.removeClass('uk-alert-warning');
                 alert.addClass('uk-alert-success');
                 alert.find("p").html('Заказ оформлен...');
                 alert.animate({
                     opacity: 0.05,
                     height: "toggle"
-                }, 3000, function () {
+                }, 1000, function () {
                     alert.attr("hidden");
                     $('.uk-modal-close-default').click();
                 });
