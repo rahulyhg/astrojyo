@@ -19,7 +19,7 @@
             </a>
             <div class="uk-h2 uk-text-center uk-margin-remove-top">
                 <span><?php echo esc_attr( types_render_field( "product_price", array( 'output' => 'raw' ) ) ); ?>
-                    руб.</span>
+                    <br>руб.</span>
             </div>
             <a href="#astro-product-<?php the_ID(); ?>"
                class="uk-button astro-post-btnmore astro-color uk-width-1-1"
