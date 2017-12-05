@@ -302,8 +302,8 @@ img.aligncenter {
 }
 
 .astro-goodstitle {
-    min-height: 100px;
-    max-height: 110px;
+    min-height: 110px;
+    max-height: 112px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
