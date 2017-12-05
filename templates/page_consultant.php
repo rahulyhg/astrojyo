@@ -18,7 +18,7 @@
             <input class="uk-input" type="email" name="client-email" placeholder="Ваш email">
         </div>
         <div class="uk-width-1-1@m">
-            <textarea class="uk-textarea" rows="5" name="client-message" placeholder="Сообщение"></textarea>
+            <textarea class="uk-textarea" rows="5" name="client-message" placeholder="Укажите дату, время и место рождения"></textarea>
         </div>
         <div class="uk-width-1-1@m">
             <button class="uk-button astro-post-btnmore astro-color uk-align-center">Отправить</button>
