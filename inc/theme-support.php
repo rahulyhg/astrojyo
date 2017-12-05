@@ -39,9 +39,3 @@ function astro_setup() {
 }
 
 add_action( 'after_setup_theme', 'astro_setup' );
-
-function true_custom_fields() {
-	add_post_type_support( 'products', 'custom-fields' ); // в качестве первого параметра укажите название типа поста
-}
-
-add_action( 'init', 'true_custom_fields' );

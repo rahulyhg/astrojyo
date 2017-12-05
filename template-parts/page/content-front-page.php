@@ -18,7 +18,7 @@
 		<?php endif; ?>
         <div class="uk-card-header">
             <a href="<?php echo esc_url( get_permalink() ); ?>" title="<?php the_title(); ?>">
-				<?php the_title( '<h3 class="uk-card-title">', '</h2>' ); ?>
+				<?php the_title( '<h3 class="uk-card-title astro-posttitle">', '</h2>' ); ?>
             </a>
         </div>
         <div class="uk-card-footer uk-padding-remove-top">

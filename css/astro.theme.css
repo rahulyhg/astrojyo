@@ -293,3 +293,17 @@ img.aligncenter {
 .uk-navbar-dropdown {
     background-image: url('/wp-content/themes/astrojyo/img/back/px1.jpg');
 }
+
+.astro-posttitle {
+    min-height: 100px;
+    max-height: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.astro-goodstitle {
+    min-height: 100px;
+    max-height: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -14,7 +14,7 @@
         </div>
         <div class="uk-card-body">
             <a href="<?php echo esc_url( get_permalink() ); ?>" title="<?php the_title(); ?>">
-                <h3 class="uk-h5 uk-margin-remove">
+                <h3 class="uk-h5 astro-goodstitle uk-margin-remove">
 					<?php the_title(); ?></h3>
             </a>
             <div class="uk-h2 uk-text-center uk-margin-remove-top">
