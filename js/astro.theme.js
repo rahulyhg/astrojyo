@@ -22,7 +22,6 @@ $(document).ready(function () {
             url: Astrojyo.ajax_url,
             data: data,
             beforeSend: function () {
-                console.log('Start send');
                 alert.animate({
                     opacity: 1,
                     height: "toggle"
@@ -35,7 +34,6 @@ $(document).ready(function () {
             }
         })
             .done(function (data) {
-                console.log('End send', data);
                 thisForm[0].reset();
                 alert.removeClass('uk-alert-warning');
                 alert.addClass('uk-alert-success');
@@ -51,6 +49,36 @@ $(document).ready(function () {
             .fail(function (err) {
                 console.log(err);
             });
-    })
+    });
+    //AJAX ORDER SEND
 
+    //AJAX CONTACT FORM SEND
+    const formContact = $('#astro-contactform');
+    formContact.on('submit', function (e) {
+        e.preventDefault();
+        let thisForm = $(this);
+        let data = {
+            action: 'contactform_send',
+            contactform: thisForm.serialize(),
+            nonce_code: Astrojyo.contact_nonce
+        };
+        $.post({
+            type: "POST",
+            url: Astrojyo.ajax_url,
+            data: data,
+            beforeSend: function () {
+                UIkit.modal.alert('Идет отправка сообщения... Ожидайте...');
+            }
+        })
+            .done(function (data) {
+                thisForm[0].reset();
+                UIkit.modal.alert('Ваша заявка была отправлена!');
+                console.log('Отправлено: ', data);
+            })
+            .fail(function (err) {
+                UIkit.modal.alert('Произошла ошибка! Попробуйте позже...');
+                console.log('Ошибка: ', err);
+            });
+    })
+    //AJAX CONTACT FORM SEND
 });

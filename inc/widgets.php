@@ -22,7 +22,7 @@ function astrojyo_widgets_init() {
 		'name'          => 'Мобильный сайдбар',
 		'id'            => 'astro-mobility',
 		'description'   => 'Мобильная версия сайдбара',
-		'before_widget' => '<div class="uk-card uk-card-small astro-tile astro-tile-shadow uk-margin-bottom uk-card-body">',
+		'before_widget' => '<div class="uk-card uk-card-small astro-tile-shadow uk-margin-bottom uk-card-body">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="uk-card-title uk-heading-line"><span>',
 		'after_title'   => '</h3>',

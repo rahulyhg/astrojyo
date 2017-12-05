@@ -24,7 +24,8 @@ function astro_load_scripts() {
 	wp_localize_script( 'astro-js', 'Astrojyo', array(
 			'ajax_url'      => admin_url( 'admin-ajax.php' ),
 			'particle_conf' => get_template_directory_uri() . '/js/particle-conf.json',
-			'nonce'         => wp_create_nonce( 'send_order' )
+			'nonce'         => wp_create_nonce( 'send_order' ),
+			'contact_nonce' => wp_create_nonce( 'contactform_send' )
 		)
 	);
 	wp_enqueue_script( 'astro-js' );
