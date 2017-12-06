@@ -27,14 +27,14 @@ body {
 }
 
 .uk-link, a {
-    color: #5b2627;
+    color: #b10e00;
     text-decoration: none;
     cursor: pointer;
 }
 
 .uk-link:hover, a:hover {
     text-decoration: none;
-    color: #b10e00;
+    color: #dc0018;
 }
 
 .uk-nav-default > li > a, .uk-nav-primary > li > a, .uk-nav-primary .uk-nav-sub a {
