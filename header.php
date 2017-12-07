@@ -92,7 +92,7 @@
     </nav>
 <?php endif; ?>
     <div class="uk-grid uk-grid-small uk-margin-small" uk-grid>
-<?php if ( !is_404() && is_page_template('calc') ): ?>
+<?php if ( !is_404() && !is_page_template('calc') ): ?>
     <aside class="uk-width-1-4@m uk-visible@s">
 		<?php get_sidebar(); ?>
     </aside>
